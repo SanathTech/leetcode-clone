@@ -24,16 +24,3 @@ function ProblemsPage({ params: { id } }: Props) {
 }
 
 export default ProblemsPage;
-
-// fetch the local data
-// SSG
-// getStaticPaths => it creates the dynamic routes
-export async function getStaticPaths() {
-  const paths = Object.keys(problems).map((key) => ({
-    params: { id: key },
-  }));
-  return {
-    paths,
-    fallback: false,
-  };
-}

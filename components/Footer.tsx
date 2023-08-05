@@ -2,7 +2,7 @@ function Footer() {
   return (
     <div className="flex w-full justify-center p-4 text-sm text-[#A6A7A8]">
       <div className="flex w-11/12 max-w-6xl border-t-[1px] pt-5 border-[#eee]">
-        <div>Copyright © 2023 LeetCode</div>
+        <div>Copyright © 2023 LeetCloned</div>
         <div className="flex ml-auto space-x-3">
           <div>Help Center</div>
           <div>|</div>

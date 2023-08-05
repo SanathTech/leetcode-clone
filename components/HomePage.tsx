@@ -1,5 +1,6 @@
 import { ChevronRightIcon } from "@heroicons/react/24/outline";
 import { HeartIcon } from "@heroicons/react/24/solid";
+import { signIn } from "next-auth/react";
 
 function HomePage() {
   return (
@@ -14,10 +15,13 @@ function HomePage() {
           <div className="flex flex-col space-y-8 max-w-lg mr-8">
             <h1 className="text-4xl font-semibold pb-2">A New Way to Learn</h1>
             <p className="leading-loose text-stone-400">
-              LeetCode is the best platform to help you enhance your skills,
+              LeetCloned is the best platform to help you enhance your skills,
               expand your knowledge and prepare for technical interviews.
             </p>
-            <button className="bg-[#1da09c] hover:bg-[#17807D] opacity-90 font-light w-[152px] rounded-full py-2 mx-auto flex items-center justify-center pl-1">
+            <button
+              onClick={() => signIn("google")}
+              className="bg-[#1da09c] hover:bg-[#17807D] opacity-90 font-light w-[152px] rounded-full py-2 mx-auto flex items-center justify-center pl-1"
+            >
               <div>Create Account</div>
               <ChevronRightIcon className="h-3 ml-1 mt-[3px]" />
             </button>
@@ -41,8 +45,8 @@ function HomePage() {
             </div>
             <p className="leading-loose text-stone-400">
               Explore is a well-organized tool that helps you get the most out
-              of LeetCode by providing structure to guide your progress towards
-              the next step in your programming career.
+              of LeetCloned by providing structure to guide your progress
+              towards the next step in your programming career.
             </p>
             <button className="text-[#0088cc] hover:text-[#53C2FF] rounded-full ml-auto flex items-center justify-center">
               <div>Get Started</div>
@@ -85,7 +89,7 @@ function HomePage() {
                 Companies & Candidates
               </h2>
               <p className="leading-loose text-stone-400">
-                Not only does LeetCode prepare candidates for technical
+                Not only does LeetCloned prepare candidates for technical
                 interviews, we also help companies identify top technical
                 talent. From sponsoring contests to providing online assessments
                 and training, we offer numerous services to businesses.
@@ -112,10 +116,10 @@ function HomePage() {
               Developer
             </h2>
             <p className="leading-loose max-w-xl text-stone-400 mx-auto">
-              We now support 14 popular coding languages. At our core, LeetCode
-              is about developers. Our powerful development tools such as
-              Playground help you test, debug and even write your own projects
-              online.
+              We now support 14 popular coding languages. At our core,
+              LeetCloned is about developers. Our powerful development tools
+              such as Playground help you test, debug and even write your own
+              projects online.
             </p>
             <div className="w-full">
               <img src="CodeEditor.png" alt="code-editor" />
@@ -138,8 +142,8 @@ function HomePage() {
               <h2 className="text-2xl text-[#C62828] font-semibold">in SF</h2>
             </div>
             <p className="leading-loose text-stone-400">
-              At LeetCode, our mission is to help you improve yourself and land
-              your dream job. We have a sizable repository of interview
+              At LeetCloned, our mission is to help you improve yourself and
+              land your dream job. We have a sizable repository of interview
               resources for many companies. In the past few years, our users
               have landed jobs at top companies around the world.
             </p>

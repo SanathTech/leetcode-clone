@@ -61,12 +61,12 @@ function NavbarSignedIn({ problemPage, id }: Props) {
           <div className="flex items-center mr-auto space-x-2">
             <a
               href="/"
-              className="flex items-center gap-2 text-[#777777] hover:text-white hover:bg-[#393939] px-2 py-1 rounded mr-2"
+              className="flex group items-center gap-2 text-[#777777] hover:text-white hover:bg-[#393939] px-2 py-1 rounded mr-2"
             >
               <div>
                 <Bars4Icon className="h-5" />
               </div>
-              <div className="mb-[1px] mr-[2px] text-[#f5f5f5bf] font-medium text-sm hover:text-white">
+              <div className="mb-[1px] mr-[2px] text-[#f5f5f5bf] group-hover:text-white font-medium text-sm">
                 Problem List
               </div>
             </a>
@@ -86,9 +86,13 @@ function NavbarSignedIn({ problemPage, id }: Props) {
         )}
         {/* Menu Items */}
         <div className="flex items-center space-x-6">
-          <div className="hover:bg-[#464646] text-sm rounded-md px-3 py-1 cursor-pointer text-[#fea116] bg-[#ffffff1a]">
+          <a
+            href="https://bmc.link/SanathTech"
+            target="_blank"
+            className="hover:bg-[#464646] text-sm rounded-md px-3 py-1 cursor-pointer text-[#fea116] bg-[#ffffff1a]"
+          >
             Buy Me A Coffee
-          </div>
+          </a>
           {!session ? (
             <div className="animate-pulse">
               <LoadingAvatar />

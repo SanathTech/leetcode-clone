@@ -93,6 +93,7 @@ function QuestionsPage() {
               problems.map((problem, index) => {
                 return (
                   <div
+                    key={index}
                     className={`flex w-full p-4 ${
                       (index + 1) % 2 == 0 && "bg-[#2A2A2A]"
                     }`}
